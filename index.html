@@ -14,6 +14,7 @@
      <link rel="stylesheet" href="https://github.com/pslo92/Site/blob/gh-pages/material.min.js">
 	<link href="https://github.com/pslo92/Site/blob/gh-pages/bootstrap2.css" rel="stylesheet">
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
 <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -23,6 +24,17 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+      <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
   </head>
   <body>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
@@ -30,7 +42,17 @@
 
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
 	<script src="https://github.com/pslo92/Site/blob/gh-pages/js/bootstrap.js"></script>
-    
+    <style>
+.layout-transparent {
+
+}
+.layout-transparent .mdl-layout__header,
+.layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: black;
+}
+</style>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
@@ -57,20 +79,21 @@
       <a class="mdl-navigation__link" href="">WEB</a>
     </nav>
   </div>
-  <main class="mdl-layout__content">
+   <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+     <main class="mdl-layout__content">
+  <div class="page-content"><!-- Your content goes here --></div>
   </main>
 </div>
 <div class="mdl-card mdl-shadow--0dp demo-card-wide">
   <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Welcome</h2>
+    <h1 class="mdl-card__title-text">WEB</h1>
   </div>
   <div class="mdl-card__supporting-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Mauris sagittis pellentesque lacus eleifend lacinia...
+    Consultoria para criação de sites dinamicos, paginas interativas, design moderno.
   </div>
   <div class="mdl-card__actions mdl-card--border">
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
+      Conheça
     </a>
   </div>
   <div class="mdl-card__menu">
@@ -92,15 +115,14 @@
 
 <div class="mdl-card mdl-shadow--0dp demo-card-wide">
   <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Welcome</h2>
+    <h1 class="mdl-card__title-text">ANALISE DE NEGOCIO</h1>
   </div>
   <div class="mdl-card__supporting-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Mauris sagittis pellentesque lacus eleifend lacinia...
+    Quer iniciar uma empresa e não sabe como começar? Temos soluções tecnologicas para a sua empresa!
   </div>
   <div class="mdl-card__actions mdl-card--border">
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
+      Conheça
     </a>
   </div>
   <div class="mdl-card__menu">
@@ -122,15 +144,14 @@
 
 <div class="mdl-card mdl-shadow--0dp demo-card-wide">
   <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Welcome</h2>
+    <h1 class="mdl-card__title-text">INFRAESTRUTURA</h1>
   </div>
   <div class="mdl-card__supporting-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Mauris sagittis pellentesque lacus eleifend lacinia...
+    Temos soluções tecnologicas para a sua empresa, tenha o sistema da sua empresa atualizado, cuidamos do seus equipamentos.
   </div>
   <div class="mdl-card__actions mdl-card--border">
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
+      Conheça
     </a>
   </div>
   <div class="mdl-card__menu">
@@ -138,15 +159,14 @@
 </div>
 <div class="mdl-card mdl-shadow--2dp demo-card-wide">
   <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Welcome</h2>
+    <h1 class="mdl-card__title-text">PROJETOS 3D</h1>
   </div>
   <div class="mdl-card__supporting-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Mauris sagittis pellentesque lacus eleifend lacinia...
+    Tenha o seu projeto em 3D com ferramentas especificas para o seu trabalho. 
   </div>
   <div class="mdl-card__actions mdl-card--border">
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
+      Conheça
     </a>
   </div>
   <div class="mdl-card__menu">
@@ -165,7 +185,8 @@
     color: #fff;
   }
 </style>
-<a href="https://github.com/google/material-design-lite/blob/master/templates/dashboard/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Solicitar</a>
+<div>
+<a href="https://github.com/google/material-design-lite/blob/master/templates/dashboard/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast" data-upgraded=",MaterialButton,MaterialRipple">Solicitar<span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 225.449031608021px; height: 225.449031608021px; -webkit-transform: translate(-50%, -50%) translate(10px, 19px); transform: translate(-50%, -50%) translate(10px, 19px);"></span></span></a>
     <script src="../../material.min.js"></script>
-  </body>
+      </body>
 </html>
